@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAFTA Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-div">
+        <div class="left-section">
+          <div class="logo">
+            <img src="assets/svg/LogoColor.svg" alt="Logo icon" />
+          </div>
+        </div>
+
+        <div class="middle-section">
+          <button class="language-switch" aria-label="language-switch-button">
+            <img
+              src="assets/svg/LanguageIcon.svg"
+              alt="Language icon"
+              class="login-icon"
+            />
+          </button>
+
+          <a
+            href="https://safta.sa/en/contact"
+            class="contact-link"
+            aria-label="contact"
+            >Contact</a
+          >
+
+          <a
+            href="https://portal.safta.sa/en"
+            class="login-btn"
+            target="_blank"
+            aria-label="login"
+          >
+            <img src="assets/svg/LoginIcon.svg" alt="Login icon" />
+            Login
+          </a>
+        </div>
+
+        <div class="right-section">
+          <img
+            src="assets/svg/saudiLogo.svg"
+            alt="Saudi Logo"
+            class="logo-img"
+          />
+
+          <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+            ☰
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <ul id="navbarList">
+          <li><a href="#second">About</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Strategy</a></li>
+          <li><a href="#">Working Groups</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="mobile-navbar-section">
+      <!-- Mobile Header with logo and close button -->
+      <div class="mobile-header">
+        <img src="assets/svg/saudiLogo.svg" alt="saudi logo" />
+        <img src="assets/svg/LogoColor.svg" alt="Logo icon" />
+        <button onclick="closeMenu()">⛌</button>
+        <!-- Close button -->
+      </div>
+
+      <!-- Middle Section with login and language button -->
+      <div class="mobile-middle">
+        <a
+          href="https://portal.safta.sa/en"
+          class="login-btn"
+          target="_blank"
+          aria-label="login"
+        >
+          <img src="assets/svg/LoginIcon.svg" alt="Login icon" />
+          Login
+        </a>
+        <button class="language-switch" aria-label="language-switch-button">
+          <img src="assets/svg/LanguageIcon.svg" alt="Language icon" />
+        </button>
+      </div>
+
+      <!-- Mobile Navbar List -->
+      <nav class="mobile-nav-bar">
+        <ul id="mobileNavbarList">
+          <li><a href="#second">About</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Strategy</a></li>
+          <li><a href="#">Working Groups</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div> -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <video id="hero-video" autoplay loop muted>
+        <source
+          src="https://static.safta.sa/videos/kaust_english.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="overlay">
+        <button id="playPauseButton">
+          <svg
+            width="2.5em"
+            height="2.5em"
+            viewBox="0 0 66 67"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="relative cursor-pointer md:h-[4em] md:w-[4em]"
+          >
+            <circle
+              cx="32.329"
+              cy="33.329"
+              r="31.329"
+              stroke="white"
+              stroke-opacity="0.2"
+              stroke-width="2"
+            ></circle>
+            <rect x="26" y="22" width="6" height="22" fill="white"></rect>
+            <rect x="34" y="22" width="6" height="22" fill="white"></rect>
+            <circle
+              cx="32.329"
+              cy="33.329"
+              r="31.329"
+              stroke="white"
+              stroke-opacity="0.7"
+              stroke-width="3"
+              stroke-dasharray="196.35"
+              stroke-dashoffset="196.35"
+              stroke-linecap="round"
+              class="transition-all duration-300 progress-ring"
+              transform="rotate(-90 32.329 33.329)"
+            ></circle>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section id="second">
+      <div class="content-wrapper">
+        <div class="left-content">
+          <div class="image-container">
+            <img
+              src="https://safta.sa/_next/image?url=https%3A%2F%2Fassets.safta.sa%2Fabout.png&w=750&q=100"
+              alt="no image"
+            />
+          </div>
+        </div>
+
+        <div class="right-content">
+          <div class="section-2-headings">
+            <p>Biotechnology solution could be the key to</p>
+            <p>unlocking Saudi Food security</p>
+          </div>
+          <div class="paragraph">
+            <p>
+              Launched in July 2024 under the patronage of the Ministry of
+              Environment, Water, and Agriculture (MEWA), the Saudi AgriFood
+              Tech Alliance brings together national and international members,
+              including government bodies, research institutions, academia,
+              private sector companies, and non-profits. The Alliance fosters
+              collaboration to advance agricultural and food technology
+              solutions in Saudi Arabia, driving national-scale deployment of
+              innovative AgriFood technologies.
+            </p>
+          </div>
+
+          <div class="leafe-svg">
+            <img
+              src="assets/svg/Leafe.svg"
+              height="200px"
+              width="200px"
+              alt="Leafe Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
