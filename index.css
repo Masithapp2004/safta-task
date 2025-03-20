@@ -1,5 +1,3 @@
-/* Basic Reset */
-
 @font-face {
   font-family: "__helveticaNeue_653f42";
   src: url("path-to-font/helveticaNeue_653f42.ttf") format("truetype");
@@ -37,7 +35,6 @@ header {
   width: 100%;
 }
 
-/* Left Section Styling */
 .left-section {
   flex: 1;
   text-align: left;
@@ -64,7 +61,6 @@ header {
   margin-right: 60px;
 }
 
-/* Right Section Styling */
 .right-section {
   display: flex;
   justify-content: flex-end;
@@ -80,7 +76,6 @@ header {
   max-height: 100%;
 }
 
-/* Button and Link Styling */
 .language-switch {
   display: inline-flex;
   align-items: center;
@@ -133,19 +128,16 @@ header {
   background-position: 100% 50%;
 }
 
-/* Navbar container */
 
-/* Navbar Styling */
 .navbar {
   padding: 10px;
-  position: sticky; /* Make the navbar sticky */
-  top: 0; /* Stick it to the top of the viewport */
-  background-color: #fff; /* Ensure it has a white background */
-  z-index: 1000; /* Keep it above other content */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+  position: sticky; 
+  top: 0;
+  background-color: #fff; 
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-/* Navbar list styles */
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -154,14 +146,12 @@ header {
   list-style: none;
 }
 
-/* Each list item style */
 .navbar ul li {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* Vertical line above each list item */
 .navbar ul li::before {
   content: "";
   position: absolute;
@@ -174,13 +164,11 @@ header {
   transition: background-color 0.3s ease, width 0.3s ease;
 }
 
-/* Make the vertical line appear and change color on hover */
 .navbar ul li:hover::before {
   background-color: #27aae1;
   width: 100%;
 }
 
-/* Navbar links */
 .navbar ul li a {
   color: black;
   text-decoration: none;
@@ -195,7 +183,6 @@ header {
   color: #27aae1;
 }
 
-/* Hero Section Styling */
 #hero {
   position: relative;
   height: 100vh;
@@ -217,43 +204,42 @@ header {
 }
 
 .overlay button {
-  width: 60px; /* Set the size of the button */
-  height: 60px; /* Make it a perfect circle */
-  padding: 0; /* Remove padding to ensure the button is circular */
+  width: 60px; 
+  height: 60px; 
+  padding: 0; 
   background-color: transparent;
   border: none;
-  border-radius: 50%; /* Make the button round */
+  border-radius: 50%; 
   color: #000;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .play-icon {
-  width: 30px; /* Size of the SVG icon */
-  height: 30px; /* Keep the icon square */
-  fill: #000; /* Set the color of the play icon */
+  width: 30px; 
+  height: 30px; 
+  fill: #000; 
 }
 
 .overlay button:focus {
-  outline: none; /* Remove the default outline when the button is focused */
+  outline: none; 
 }
 
 .progress-ring {
   transition: stroke-dashoffset 0.1s linear;
 }
 
-/* Hero Section */
 
 #second {
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; 
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: flex-end; /* Align both sections to the bottom of the section */
-  padding: 0 20px; /* Optional: Add some padding for spacing */
+  justify-content: center;
+  align-items: flex-end; 
+  padding: 0 20px; 
 }
 
 .content-wrapper {
@@ -263,20 +249,20 @@ header {
 }
 
 .left-content {
-  flex: 1; /* Allow left content to take up available space */
+  flex: 1; 
   display: flex;
-  justify-content: center; /* Center image horizontally */
+  justify-content: center; 
 }
 
 .image-container img {
-  width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 300px; /* Limit image width for better layout */
+  width: 100%;
+  height: auto; 
+  max-width: 300px; 
 }
 
 .right-content {
-  flex: 1; /* Allow right content to take up available space */
-  padding-left: 20px; /* Optional: space between text and images */
+  flex: 1; 
+  padding-left: 20px; 
 }
 
 .section-2-headings p {
@@ -292,23 +278,23 @@ header {
 .paragraph p {
   font-size: 1rem;
   line-height: 2.25rem;
-  margin-top: 20px; /* Space between the heading and paragraph */
+  margin-top: 20px; 
 }
 
 .leafe-svg {
-  margin-top: 20px; /* Space between the paragraph and the Leafe image */
+  margin-top: 20px; 
   display: flex;
-  justify-content: center; /* Center the Leafe image horizontally */
+  justify-content: center; 
 }
 
 .leafe-svg img {
   width: auto;
-  height: 200px; /* Set height for the Leafe image */
-  max-width: 200px; /* Ensure the image doesn't exceed 200px width */
+  height: 200px; 
+  max-width: 200px;
 }
 
 .menu-toggle {
-  display: none; /* Hide by default */
+  display: none; 
   font-size: 30px;
   cursor: pointer;
   position: absolute;
@@ -331,51 +317,47 @@ header {
   display: block;
 }
 
-/* Navbar List Styling */
-
-/* Basic styling for the navigation */
 .mobile-nav-bar ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
 .mobile-nav-bar ul li {
-  margin: 25px 0; /* Spacing between items */
-  position: relative; /* To position the underline */
+  margin: 25px 0; 
+  position: relative; 
 }
 
 .mobile-nav-bar ul li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  display: inline-block; /* Ensures that the link behaves like a block */
-  padding-bottom: 10px; /* Space between text and the line */
+  display: inline-block; 
+  padding-bottom: 10px; 
   margin-left: 5px;
 }
 
-/* Hover effect for links */
 .mobile-nav-bar ul li a:hover {
   color: #27aae1;
 }
 
-/* Full-width divider under each list item */
+
 .mobile-nav-bar ul li a::after {
-  content: ""; /* Empty content for the line */
+  content: ""; 
   display: block;
   width: calc(
     100% - 20px
-  ); /* Full width minus left and right margin (20px total) */
-  height: 2px; /* Thickness of the line */
-  background-color: #ccc; /* Line color */
-  margin-top: 5px; /* Space between text and line */
+  );
+  height: 2px;
+  background-color: 
+  margin-top: 5px;
   position: absolute;
-  left: 5px; /* Add space from the left side */
-  right: 5px; /* Add space from the right side */
+  left: 5px;
+  right: 5px; 
 }
 
-/* Mobile Header Styling */
+
 .mobile-header {
   display: flex;
   justify-content: space-between;
@@ -391,7 +373,7 @@ header {
   cursor: pointer;
 }
 
-/* Mobile Middle Section */
+
 .mobile-middle {
   display: flex;
   flex-direction: row;
@@ -405,7 +387,6 @@ header {
   max-width: 120px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .navbar ul {
     display: none;
