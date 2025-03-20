@@ -259,7 +259,7 @@ header {
 .content-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 250px;
+  margin-bottom: 4px;
 }
 
 .left-content {
